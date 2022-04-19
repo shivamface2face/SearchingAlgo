@@ -11,9 +11,9 @@ public class BinarySrch {
       static int srch(int[] arr, int key) {
         int low=0;
         int high= arr.length-1;
-        int mid=(low+high)/2;
 
         while (low<=high){
+            int mid=(low+high)/2;
             if (arr[mid]==key){
                 return mid;
             }else if(arr[mid]>key){
